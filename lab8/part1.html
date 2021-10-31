@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+
+<body>
+    <form method="post">
+        <label for="name">Ім'я
+        </label>
+        <input type="text" id="name" value="Андрій"> <br>
+        <label for="surname">Прізвище
+        </label>
+        <input type="text" id="surname" value="Моє прізвище">
+        <br>
+        <label for="email">Пошта</label> <input type="email"><br>
+        <label for="country">Країна</label>
+        <select name="country" id="country">
+            <option value="ua">Україна</option>
+            <option value="us">USA</option>
+            <option value="uk">Англія</option>
+            <option value="de">Німеччина</option>
+            <option value="fr">Франція</option>
+        </select>
+        <br>
+        <label for="city">Місто</label>
+        <br>
+        <input type="radio" name="city"> Ченівці <br>
+        <input type="radio" name="city"> Не Чернівці <br>
+        <label for="lang">Мова</label>
+        <br>
+        <input type="checkbox" name="lang"> Українська <br>
+        <input type="checkbox" name="lang"> англійська <br>
+        <input type="checkbox" name="lang"> інші <br>
+        <label for="occupation">Професія</label>
+        <select multiple="multiple" size="1">
+            <option value="ua">СЕО</option>
+            <option value="us">Блогер</option>
+            <option value="uk">Програміст</option>
+            <option value="de">game-dev раб</option>
+            <option value="fr">Дизайнер</option>
+        </select>
+        <br>
+        <label for="password">Пароль</label>
+        <input type="password" name="password">
+        <br>
+        <input type="submit"> <br>
+        <input type="reset"> <br>
+    </form>
+</body>
+
+</html>

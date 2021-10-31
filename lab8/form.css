@@ -1,0 +1,52 @@
+.div {
+    background-color: gray;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+    border-radius: 10px;
+}
+
+.div form {
+    height: auto;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.div form input {
+    width: 500px;
+}
+
+.div form p select {
+    width: 150px;
+}
+
+.div form fieldset {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: silver;
+    margin-bottom: 20px;
+}
+
+.div form fieldset legend {
+    background-color: purple;
+    color: white;
+    width: 200px;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #00BCD4;
+    background: #ECECEC;
+    transition: .4s;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background: #00bcd4;
+    color: white;
+    border-radius: 10px;
+}
