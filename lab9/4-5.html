@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжковий магазин</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+
+<body bgcolor="#3F3351" text="#864879">
+    <table align="center">
+        <tr>
+            <td colspan="2" bgcolor="#1F1D36">Книжковий магазин</td>
+        </tr>
+        <tr>
+            <td>
+                <ul type="none">
+                    <li>Головна</li>
+                    <li>Каталог</li>
+                </ul>
+            </td>
+            <td rowspan="2">
+                <form>
+                    <label for="H">Форма для замовлення(можна було таблицею)</label>
+                    <br>
+                    <label for="author">Автор</label>
+                    <input type="text" name="author">
+                    <br>
+                    <label for="name">Назва</label>
+                    <input type="text" name="name">
+                    <br>
+                    <label for="quant">Кількість</label>
+                    <input type="text" name="quant" class="quantity">
+                    <br>
+                    <label for="address">Адреса доставки</label>
+                    <input type="text" name="address"> <br>
+                    <label for="delivery">Спосіб доставки</label>
+                    <br>
+                    <input type="radio" name="del"> пошта
+                    <br>
+                    <input type="radio" name="del"> кур'єр
+                    <br>
+                    <label for="pay">Спосіб оплати</label>
+                    <select name="pay">
+                        <option value="credit_card">Карточкою</option>
+                        <option value="in_cash">Готівкою</option>
+                    </select>
+                    <br>
+                <label for="addditional">Додаткові побажання</label> <br>
+                    <textarea name="additional"cols="30" rows="10"></textarea> <br>
+                    <label for="check">Ознайомлений з умовами доставки</label>
+                    <input type="checkbox" required> 
+                    <button type="submit">Надіслати форму</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Новинки <br>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.eymockup.com%2Fwp-content%2Fuploads%2F2017%2F04%2Fbook-mockup-2302.jpg&f=1&nofb=1"
+                    class=img>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
