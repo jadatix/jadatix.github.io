@@ -25,29 +25,41 @@
                 <form>
                     <label for="H">Форма для замовлення(можна було таблицею)</label>
                     <br>
-                    <label for="author">Автор</label>
-                    <input type="text" name="author">
-                    <br>
-                    <label for="name">Назва</label>
-                    <input type="text" name="name">
-                    <br>
+                    <div class="field">
+                        <label for="author">Автор</label>
+                        <input type="text" name="author">
+                        <!-- <br> -->
+                    </div>  
+                    <div class="field">    
+                        <label for="name">Назва</label>
+                        <input type="text" name="name">
+                        <!-- <br> -->
+                    </div>
+                    <div class="field">
                     <label for="quant">Кількість</label>
                     <input type="text" name="quant" class="quantity">
                     <br>
+                    </div>
+                    <div class="field">
                     <label for="address">Адреса доставки</label>
                     <input type="text" name="address"> <br>
+                    </div>
+                    <div class="field">
                     <label for="delivery">Спосіб доставки</label>
                     <br>
                     <input type="radio" name="del"> пошта
                     <br>
                     <input type="radio" name="del"> кур'єр
                     <br>
+                    </div>
+                    <div class="field">
                     <label for="pay">Спосіб оплати</label>
                     <select name="pay">
                         <option value="credit_card">Карточкою</option>
                         <option value="in_cash">Готівкою</option>
                     </select>
                     <br>
+                    </div>
                 <label for="addditional">Додаткові побажання</label> <br>
                     <textarea name="additional"cols="30" rows="10"></textarea> <br>
                     <label for="check">Ознайомлений з умовами доставки</label>
