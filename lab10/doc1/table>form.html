@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма та таблиці</title>
+    <style>
+        table {
+            margin: 0 auto;
+            width: 500px;
+        }
+
+        label {
+            display: block;
+        }
+
+        table td {
+            padding: 5px;
+        }
+
+        table tr:first-child td {
+            background-color: aqua;
+            text-align: center;
+        }
+
+        textarea {
+            resize: none;
+            width: 500px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h1>Ваші відгуки про сайт</h1>
+                </td>
+            </tr>
+            <form action="">
+                <tr>
+                    <td colspan="2">
+
+                        <label for="val">Як ви оцінюєте нашу сторінку?</label>
+                        <input type="radio" name="val">Відмінно <input type="radio" name="val"> Добре
+                        <input type="radio" name="val">Ну таке <input type="radio" name="val"> Який жах
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+
+                        <label for="comment">ЩО ви хочете прокоментувати?</label>
+                        <select name="comment">
+                            <option value="site">сайт</option>
+                            <option value="state">ментальне здоров'я</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+
+                        <label for="area">Будь ласка, залиште свій коментар нижче:</label>
+                        <textarea name="area" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Як з нами зв'язатися?
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ім'я</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Телефон</td>
+                    <td><input type="text" name="name" pattern="[0-9]{10}" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+
+                        <input type="checkbox" name="box"> Прошу Зв'язатися зі мною терміново <br>
+                        <input type="submit">
+                        <input type="reset">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+
+</html>

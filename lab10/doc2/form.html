@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <style>
+        table {
+            margin: 0 auto;
+            width: 500px;
+            background-color: cadetblue;
+        }
+
+        table tr>th,
+        table tr:nth-child(2) td:first-child {
+            text-align: center;
+        }
+
+        table tr td:nth-child(even) {
+            text-align: left;
+        }
+
+        table tr td:nth-child(odd),
+        table tr:not(:nth-child(2)) {
+            text-align: right;
+        }
+
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <form action="">
+            <tr>
+                <th colspan="2">Реєстрація нового користувача</th>
+            </tr>
+            <tr>
+                <td colspan="2">Обов'язкові поля виділені червоним кольором</td>
+            </tr>
+            <tr class="required">
+                <td>Логін(псевдонім)</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr class="required">
+                <td>email</td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr class="required">
+                <td>Пароль (не менше 6 сим.)</td>
+                <td><input type="password" required></td>
+            </tr>
+            <tr class="required">
+                <td>Повторіть пароль</td>
+                <td><input type="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr color="lime">
+                </td>
+            </tr>
+            <tr>
+                <td>Прізвище</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Ім'я</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>По батькові</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Дата народження:</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Стать</td>
+                <td><input type="radio" name="sex">чоловіча <input type="radio" name="sex">жіноча</td>
+            </tr>
+            <tr>
+                <td>Місце проживання</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Освіта</td>
+                <td><input type="radio" name="degree">Вища</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="degree">Не завершена вища</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="degree">Середня спеціална</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="degree">Середня</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr color="lime">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+                <td><input type="reset"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
