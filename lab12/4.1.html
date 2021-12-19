@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 12 Task 4</title>
+    <link rel="stylesheet" href="4.css">
+    <style>
+        .block1 {
+            width: 200px;
+            background: #ccc;
+            padding: 5px;
+            padding-right: 20px;
+            border: solid 1px black;
+            float: left;
+        }
+
+        .block2 {
+            width: 200px;
+            background: #fc0;
+            padding: 5px;
+            border: solid 1px black;
+            float: left;
+            position: relative;
+            top: 40px;
+            left: -70px;
+        }
+
+        .layout {
+            width: 100%;
+        }
+
+        td {
+            vertical-align: top;
+            padding: 5px;
+        }
+
+        td.leftcol {
+            width: 200px;
+            background: #ccc;
+        }
+
+        td.rightcol {
+            background: #fc3;
+        }
+
+        .col1 {
+            width: 150px;
+            background: #fc0;
+        }
+
+        .col2 {
+            background: #afccdb;
+        }
+
+        .col3 {
+            width: 200px;
+            background: #fc0;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Цей текст оформлено відповідно до таблиці стилів, яка міститься у файлі mystyle.css: розмір шрифту - 40 пунктів,
+        колір шрифту – зелений, а гарнітура - Comic Sans MS.</p>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+        <table cellspacing="0" class="layout">
+            <tr>
+                <td class="leftcol">Ліва колонка</td>
+                <td class="rightcol">Права колонка</td>
+            </tr>
+        </table>
+        <div>
+            <div class="block1">Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet
+                dolore magna aliguam erat volutpat.</div>
+            <div class="block2">Ut wisis enim ad minim veniam, quis nostrud
+                exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat.</div>
+        </div>
+        <table class="layout" cellspacing="0">
+            <tr>
+                <td class="col1">
+                    <center>Колонка 1</center>
+                </td>
+                <td class="col2">
+                    <center>Колонка 2</center>
+                </td>
+                <td class="col3">
+                    <center>Колонка 3</center>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+</body>
+
+</html>

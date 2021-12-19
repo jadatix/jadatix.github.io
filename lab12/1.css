@@ -1,0 +1,80 @@
+#wrapper-outer {
+    display: table;
+    width: 100%;
+}
+
+#wrapper-inner {
+    display: table-row;
+}
+
+#one,#two,#three,#four {
+    display: table-cell;
+}
+
+#line {
+    line-height: 100px;
+    text-align: center;
+    background-color: yellow;
+    display: list-item;
+}
+
+#line2 {
+    background-color: bisque;
+    line-height: 150px;
+    text-align: center;
+    display: list-item;
+}
+
+#line2 img {
+    vertical-align: middle;
+}
+
+#line3 {
+    display: table;
+    height: 150px;
+    width: 100%;
+    background-color: powderblue;
+}
+
+#line3 .inner-wrapper {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#line4 {
+    background-color: lightpink;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+
+#line4 .inner-wrapper {
+    background-color: deeppink;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50%;
+    margin-top: -25px;
+    margin-left: -25%;
+}
+
+#line5 {
+    background-color: plum;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+
+#line5 .inner-wrapper {
+    background-color: deeppink;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+}

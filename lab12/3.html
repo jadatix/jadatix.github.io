@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab12 Task 3</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+    <form>
+        <h2>Анкета користувача</h2>
+        <div class="content">
+            <h3>Особисті дані</h3>
+            <h3>Захоплення</h3>
+            <fieldset>
+                <label for="name">Ваше ім'я:</label>
+                <input type="text"><br>
+                <label for="password">Ваш пароль:</label>
+                <input type="password" name="" id=""><br>
+                <label for="photo">Ваше фото:</label>
+                <input type="file" name="photo" id="photo">
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" name="computer" id="computer"><span> Комп'ютери та Інтернет</span><br>
+                <input type="checkbox" name="art" id="art"><span> Література та мистецтво</span><br>
+                <input type="checkbox" name="music" id="music"><span> Музика</span><br>
+                <input type="checkbox" name="car" id="car"><span> Автомобілі</span><br>
+                <input type="checkbox" name="sport" id="sport"><span> Спорт та активний відпочинок</span><br>
+            </fieldset>
+            <h3>Місце проживання</h3>
+            <h3>Коментарі</h3>
+            <fieldset>
+                <select name="city" id="city" size="5">
+                    <option value="choose-city" disabled>---Виберіть місто---</option>
+                    <option value="Kyiv">Київ</option>
+                    <option value="Lutsk">Луцьк</option>
+                    <option value="Lviv">Львів</option>
+                    <option value="Odesa">Одеса</option>
+                </select>
+                <br>
+                <br>
+                <select name="country" id="country">
+                    <option value="choose-country">---Виберіть країну---</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <textarea name="comment" id="comment" cols="22" rows="4">
+                </textarea>
+                <input type="radio" name="log" id="log"><span> Я вперше на сторінці</span><br>
+                <input type="radio" name="log" id="log"><span> Я тут не вперше</span>
+            </fieldset>
+        </div>
+        <div class="footer">
+            <input type="submit" value="Надіслати">
+            <input type="reset" value="Очистити">
+        </div>
+    </form>
+</body>
+</html>

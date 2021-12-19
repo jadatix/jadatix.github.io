@@ -1,0 +1,66 @@
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul, nav ul li ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul {
+    height: 30px;
+    padding-left: 25px;
+    min-width: 150px;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+    height: 100%;
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 6px;
+    width: auto;
+}
+
+nav ul li > ul li a {
+    text-decoration: none;
+}
+
+nav ul {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul > li:hover {
+    box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);    
+}
+
+.dropdown > li {
+    width: 100px;
+}
+
+table, td, tr {
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+}
+
+table {
+    margin-top: 150px;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+}

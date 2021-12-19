@@ -1,0 +1,50 @@
+ul li {
+    list-style: square;
+}
+
+ol {
+    margin-left: 30px;
+}
+
+ol li {
+    list-style: lower-roman;
+}
+
+table {
+    border: 1px solid #000;
+    width: 300px;
+    height: 150px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.art {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.art .square-1 {
+    background-color: #f1b584;
+    position: absolute;
+    left: 0%;
+    right: 33.33%;
+    top: 0%;
+    bottom: 33.33%;
+}
+
+.art .square-2 {
+    background-color: rgba(201, 154, 153, 0.7);
+    position: absolute;
+    left: 33.33%;
+    right: 0%;
+    top: 33.33%;
+    bottom: 0%;
+}
+
+.square-1, .square-2 {
+    border: 5px double #000;
+    border-radius: 20px;
+}

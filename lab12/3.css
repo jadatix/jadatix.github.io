@@ -1,0 +1,51 @@
+
+
+form {
+    width: 40%;
+    border: 1px solid #00b050;
+}
+
+form h2, h3 {
+    text-align: center;
+    color: #003300;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content * {
+    margin: 0;
+}
+
+.content fieldset {
+    border: 1px solid white;
+    background-color: #ccffcc;
+}
+
+.content h3 {
+    line-height: 40px;
+    background-color: #00cc33;
+    border: 1px solid #fff;
+}
+
+.content span {
+    color: #003300;
+    font-weight: 800;
+}
+
+.content label {
+    color: #003300;
+    font-weight: bold;
+}
+
+.footer {
+    line-height: 40px;
+    background-color: #006633;
+    text-align: center;
+}
+
+.footer input[type="submit"] {
+    margin-right: 10px;
+}

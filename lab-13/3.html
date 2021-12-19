@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хрестики-нулики</title>
+    <link rel="stylesheet" href="3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Файл</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Нова гра</a></li>
+                        <li><a href="#">Відкрити</a></li>
+                        <li><a href="#">Зберегти</a></li>
+                        <li><a href="#">Закрити</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Правка</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Відмінити</a></li>
+                        <li><a href="#">Підказка</a></li>
+                        <li><a href="#">Повторити</a></li>
+                        <li><a href="#">Видалити</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td id="1"> </td>
+                <td id="2"> </td>
+                <td id="3"> </td>
+            </tr>
+            <tr>
+                <td id="4"> </td>
+                <td id="5"> </td>
+                <td id="6"> </td>
+            </tr>
+            <tr>
+                <td id="7"> </td>
+                <td id="8"> </td>
+                <td id="9"> </td>
+            </tr>
+        </table>
+
+        <script>
+            $('td').click(function () {
+                let id = $(this).attr('id')
+                $(`#${id}`).text('X')
+            })
+            $('td').dblclick(function () {
+                let id = $(this).attr('id')
+                $(`#${id}`).text('O')
+            })
+            $('td').mousedown(function (e) {
+                switch (e.which) {
+                    case 2:
+                        let id = $(this).attr('id')
+                        $(`#${id}`).text(' ')
+                        break;
+                }
+                return true;
+            })
+        </script>
+</body>
+
+</html>
